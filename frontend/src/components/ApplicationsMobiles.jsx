@@ -1,37 +1,60 @@
 import React from "react";
+import { FaMobileAlt, FaMapMarkedAlt, FaBell, FaShoppingCart } from "react-icons/fa";
 
 const ApplicationsMobiles = () => {
   return (
     <div className="bg-white min-h-screen text-gray-800 px-6 py-12">
-      <header className="text-center mb-10">
+      <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-blue-600">Applications Mobiles</h1>
         <p className="mt-4 text-lg max-w-3xl mx-auto">
-          Nous développons des applications mobiles performantes pour Android et iOS,
-          adaptées à vos besoins métiers spécifiques : e-commerce, VTC, logistique, santé, éducation, etc.
+          Développement d'applications mobiles Android & iOS modernes et performantes, conçues pour vos besoins métiers.
         </p>
       </header>
 
-      <section className="max-w-4xl mx-auto space-y-6 text-justify">
-        <p>
-          Chez <strong>BIWI Technologies</strong>, nous utilisons des frameworks modernes comme <strong>React Native</strong> et <strong>Flutter</strong>
-          pour concevoir des applications mobiles multiplateformes à la fois rapides, fiables et esthétiques.
-        </p>
+      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <FeatureCard
+          icon={<FaMobileAlt size={36} />}
+          title="Développement natif & hybride"
+          description="Apps conçues avec React Native et Flutter pour des performances optimales sur toutes les plateformes."
+        />
+        <FeatureCard
+          icon={<FaBell size={36} />}
+          title="Fonctionnalités avancées"
+          description="Notifications push, paiements intégrés, authentification, chat, API tierces, etc."
+        />
+        <FeatureCard
+          icon={<FaMapMarkedAlt size={36} />}
+          title="Géolocalisation & tracking"
+          description="Suivi de véhicules, localisation d'utilisateurs, cartes interactives, idéal pour VTC, logistique, livraison."
+        />
+        <FeatureCard
+          icon={<FaShoppingCart size={36} />}
+          title="Solutions e-commerce"
+          description="Développement de boutiques mobiles avec panier, gestion des commandes, paiement sécurisé."
+        />
+      </section>
 
+      <section className="max-w-5xl mx-auto space-y-6 text-justify">
         <p>
-          Nos applications sont dotées de fonctionnalités avancées : notifications push, géolocalisation,
-          paiement mobile, authentification sécurisée, intégration API, gestion des commandes, chat en temps réel, etc.
+          <strong>BIWI Technologies</strong> accompagne ses clients de l'idée à la publication sur les stores : étude fonctionnelle, design UI/UX, développement, tests, déploiement et support.
         </p>
-
         <p>
-          De la conception UI/UX jusqu'à la mise en production sur Google Play et l'App Store, notre équipe vous accompagne à chaque étape.
+          Nos applications sont pensées pour l'évolutivité, la sécurité et l'engagement utilisateur. Elles sont adaptées aux PME, startups, ONG et institutions.
         </p>
-
         <p>
-          Que vous soyez une startup, une PME ou une grande entreprise, nous vous aidons à transformer vos idées en expériences mobiles engageantes.
+          Vous avez une idée d'application mobile ? Contactez-nous pour une démonstration ou un devis personnalisé.
         </p>
       </section>
     </div>
   );
 };
+
+const FeatureCard = ({ icon, title, description }) => (
+  <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+    <div className="text-blue-600 mb-4">{icon}</div>
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p>{description}</p>
+  </div>
+);
 
 export default ApplicationsMobiles;

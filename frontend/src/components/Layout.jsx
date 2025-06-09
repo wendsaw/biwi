@@ -14,7 +14,7 @@ const Layout = () => {
                 <Link to="/" className="hover:text-blue-600">Accueil</Link>
               </li>
               <li>
-                <Link to="/plateformes-informatiques" className="hover:text-blue-600">Services</Link>
+                <Link to="/services" className="hover:text-blue-600">Services</Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-blue-600">Contact</Link>
