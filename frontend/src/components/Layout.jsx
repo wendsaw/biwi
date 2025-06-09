@@ -1,6 +1,6 @@
 // Layout.jsx
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -8,6 +8,19 @@ const Layout = () => {
       <header className="bg-white shadow p-4 mb-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold text-blue-600">BIWI Technologies</h1>
+          <nav>
+            <ul className="flex space-x-6 text-sm">
+              <li>
+                <Link to="/" className="hover:text-blue-600">Accueil</Link>
+              </li>
+              <li>
+                <Link to="/plateformes-informatiques" className="hover:text-blue-600">Services</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-blue-600">Contact</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
 

@@ -19,21 +19,21 @@ const Home = () => {
           title="Plateformes informatiques"
           description="Conception de plateformes web pour les PME, start-ups, et institutions."
         /></Link>
-        <ServiceCard
+        <Link to="developpement-web"><ServiceCard
           icon={<FaServer size={40} />}
           title="Développement Web"
           description="Logiciels sur mesure adaptés à vos besoins métier et à vos objectifs."
-        />
-        <ServiceCard
+        /></Link>
+        <Link to="applications-mobiles"><ServiceCard
           icon={<FaMobileAlt size={40} />}
           title="Applications Mobiles"
           description="Applications Android & iOS pour e-commerce, VTC et services à la demande."
-        />
-        <ServiceCard
+        /></Link>
+       <Link to="vente-materiels"> <ServiceCard
           icon={<FaShoppingCart size={40} />}
           title="Vente de Matériel"
           description="Ordinateurs, périphériques, équipements réseaux et électroniques."
-        />
+        /></Link>
       </section>
 
       {/* Footer */}
