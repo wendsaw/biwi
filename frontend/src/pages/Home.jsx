@@ -9,7 +9,7 @@ const Home = () => {
       <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez BIWI Technologies</h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          Créateurs de solutions numériques puissantes pour les entreprises africaines de demain.
+          Créateurs de solutions numériques puissantes pour les entreprises.
         </p>
         <Link to="/contact" className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-100 transition">
           Contactez-nous
