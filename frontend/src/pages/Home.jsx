@@ -41,7 +41,7 @@ const Home = () => {
             <ServiceCard
               icon={<FaLaptopCode size={40} />}
               title="Plateformes Informatiques"
-              description="Conception de plateformes web robustes pour les institutions et les entreprises."
+              description="Conception de plateformes web robustes pour les institutions."
             />
           </Link>
           <Link to="/developpement-web">
