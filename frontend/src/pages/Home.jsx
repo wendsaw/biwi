@@ -4,17 +4,34 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-gray-50 text-gray-800">
-      {/* Hero */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez BIWI Technologies</h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          Créateurs de solutions numériques puissantes pour les entreprises.
-        </p>
-        <Link to="/contact" className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-100 transition">
-          Contactez-nous
-        </Link>
-      </section>
+    <div className="bg-gray-50 text-blue-800">
+      <section className="relative text-white py-20 px-6 text-center overflow-hidden">
+  {/* Arrière-plan animé (GIF) */}
+  <div
+    className="absolute inset-0 w-full h-full bg-cover bg-center opacity-40"
+    style={{
+      backgroundImage: "url('/images/animaux.gif')"
+    }}
+  ></div>
+
+  {/* Superposition colorée */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-60"></div>
+
+  {/* Contenu texte */}
+  <div className="relative z-10">
+    <h1 className="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez BIWI Technologies</h1>
+    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+      Créateurs de solutions numériques puissantes pour les entreprises.
+    </p>
+    <Link
+      to="/contact"
+      className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-100 transition"
+    >
+      Contactez-nous
+    </Link>
+  </div>
+</section>
+
 
       {/* Nos Services */}
       <section className="px-6 py-16">
