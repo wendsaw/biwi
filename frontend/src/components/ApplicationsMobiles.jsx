@@ -36,7 +36,7 @@ const ApplicationsMobiles = () => {
 
       <section className="max-w-5xl mx-auto space-y-6 text-justify">
         <p>
-          <strong>BIWI</strong> accompagne ses clients de l'idée à la publication sur les stores : étude fonctionnelle, design UI/UX, développement, tests, déploiement et support.
+          <strong>BIWI tech</strong> accompagne ses clients de l'idée à la publication sur les stores : étude fonctionnelle, design UI/UX, développement, tests, déploiement et support.
         </p>
         <p>
           Nos applications sont pensées pour l'évolutivité, la sécurité et l'engagement utilisateur. Elles sont adaptées aux PME, startups, ONG et institutions.
