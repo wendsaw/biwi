@@ -36,7 +36,7 @@ const DeveloppementWeb = () => {
 
       <section className="max-w-5xl mx-auto space-y-6 text-justify">
         <p>
-          <strong>BIWI Technologies</strong> conçoit des applications web sur mesure adaptées à chaque secteur : éducation, finance, logistique, santé, e-commerce, administration.
+          <strong>ANT TECHNOLOGY</strong> conçoit des applications web sur mesure adaptées à chaque secteur : éducation, finance, logistique, santé, e-commerce, administration.
         </p>
         <p>
           Nos prestations couvrent toutes les étapes : définition des besoins, prototypage UI/UX, développement, déploiement cloud, documentation et maintenance.

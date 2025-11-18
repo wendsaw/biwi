@@ -19,7 +19,7 @@ const Home = () => {
 
   {/* Contenu texte */}
   <div className="relative z-10">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez BIWI Technologies</h1>
+    <h1 className="text-4xl md:text-5xl font-bold mb-4">ANT TECHNOLOGY</h1>
     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
       Créateurs de solutions numériques puissantes pour les entreprises.
     </p>
@@ -70,7 +70,7 @@ const Home = () => {
 
       {/* Pourquoi choisir BIWI */}
       <section className="bg-white px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Pourquoi choisir BIWI ?</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Pourquoi choisir ANT TECHNOLOGY ?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
           <WhyCard
             icon={<FaBolt size={36} />}

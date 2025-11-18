@@ -8,7 +8,7 @@ const Services = () => {
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-blue-600">Nos Services</h1>
         <p className="mt-4 text-lg max-w-2xl mx-auto">
-          BIWI propose des solutions numériques complètes : plateformes informatiques, développement web, applications mobiles, et vente de matériel.
+          ANT TECHNOLOGY propose des solutions numériques complètes : plateformes informatiques, développement web, applications mobiles, et vente de matériel.
         </p>
       </header>
 

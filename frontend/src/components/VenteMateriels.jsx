@@ -43,7 +43,7 @@ const VenteMateriels = () => {
           Que vous équipiez un bureau, une école, une clinique ou un espace public, nous vous proposons des solutions sur mesure adaptées à votre budget et vos contraintes techniques.
         </p>
         <p>
-          Faites confiance à <strong>BIWI Technologies</strong> pour l’approvisionnement de vos équipements IT & électroniques avec professionnalisme et réactivité.
+          Faites confiance à <strong>ANT TECHNOLOGY</strong> pour l’approvisionnement de vos équipements IT & électroniques avec professionnalisme et réactivité.
         </p>
       </section>
     </div>

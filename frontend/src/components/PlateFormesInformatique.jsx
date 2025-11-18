@@ -40,7 +40,7 @@ const PlateFormesInformatique = () => {
 
       <section className="max-w-5xl mx-auto space-y-6 text-justify mb-12">
         <p>
-          Chez <strong>BIWI Technologies</strong>, nous développons des plateformes informatiques pour divers secteurs :
+          Chez <strong>ANT TECHNOLOGY</strong>, nous développons des plateformes informatiques pour divers secteurs :
           éducation, santé, agriculture, finance, administration, logistique.
         </p>
         <p>

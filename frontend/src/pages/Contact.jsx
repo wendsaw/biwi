@@ -3,56 +3,54 @@ import React, { useState } from "react";
 const Contact = () => {
   const [form, setForm] = useState({
     nom: "",
-    email: "",
     telephone: "",
-    service: "",
-    message: ""
+    message: "",
   });
-  const [status, setStatus] = useState("");
+
+  const WHATSAPP_NUMBER = "22668167516"; 
+  const PHONE_1 = "60191998";
+  const PHONE_2 = "68167516";
+  const EMAIL_CONTACT = "info@anttechnologybf.com";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Envoi en cours...");
 
-    try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(form),
-});
+    const text = `
+Bonjour, je m'appelle ${form.nom}.
+Téléphone : ${form.telephone}.
 
+${form.message}
 
-      const data = await response.json();
+📞 Contacts téléphone :
+ ${PHONE_1}
+ ${PHONE_2}
 
-      if (data.success) {
-        setStatus("✅ Message envoyé avec succès !");
-        setForm({ nom: "", email: "", telephone: "", service: "", message: "" });
-      } else {
-        setStatus("❌ Erreur lors de l'envoi. Veuillez réessayer.");
-      }
-    } catch (error) {
-      console.error("Erreur:", error);
-      setStatus("❌ Impossible de contacter le serveur.");
-    }
+📩 Email : ${EMAIL_CONTACT}
+    `;
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
   };
 
   return (
     <div className="min-h-screen bg-gray-50 px-6 py-12 text-gray-800">
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-blue-600">Contactez-nous</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto">
-          Vous avez un projet ou une question ? Envoyez-nous un message, nous vous répondrons rapidement.
+      <header className="text-center mb-8">
+        <h1 className="text-4xl font-extrabold text-gray-800 tracking-tight">
+          <span className="text-green-600">Contact</span>
+        </h1>
+        <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto">
+          Remplissez ce formulaire et vous serez redirigé automatiquement vers WhatsApp.
         </p>
       </header>
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow space-y-6"
+        className="max-w-md mx-auto bg-white p-8 rounded-xl shadow space-y-6"
       >
         <div>
           <label className="block text-sm font-medium mb-1">Nom</label>
@@ -62,19 +60,7 @@ const Contact = () => {
             value={form.nom}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
           />
         </div>
 
@@ -86,42 +72,42 @@ const Contact = () => {
             value={form.telephone}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-1">Service</label>
-          <input
-            type="text"
-            name="service"
-            value={form.service}
-            onChange={handleChange}
-            required
-            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">Message</label>
+          <label className="block text-sm font-medium mb-1">Votre message / projet</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
+            rows="4"
             required
-            rows="5"
-            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-          ></textarea>
+            className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+          />
+        </div>
+
+        <div className="text-sm text-gray-700">
+          📞 <strong>Contacts téléphoniques :</strong><br/>
+           {PHONE_1}<br/>
+           {PHONE_2}
+        </div>
+
+        <div className="text-sm text-gray-700">
+          📱 <strong>WhatsApp :</strong> {PHONE_2}
+        </div>
+
+        <div className="text-sm text-gray-700">
+          📩 <strong>Email :</strong> {EMAIL_CONTACT}
         </div>
 
         <button
           type="submit"
-          className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+          className="w-full bg-green-600 text-white px-6 py-3 rounded font-semibold hover:bg-green-700 transition"
         >
-          Envoyer
+          Envoyer sur WhatsApp
         </button>
-
-        {status && <p className="text-center mt-4">{status}</p>}
       </form>
     </div>
   );

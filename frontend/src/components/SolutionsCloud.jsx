@@ -41,7 +41,7 @@ const SolutionsCloud = () => {
           collaboration d'équipe, et renforcer la fiabilité de vos services numériques.
         </p>
         <p>
-          BIWI Technologies s’occupe de toute la chaîne de valeur : configuration de serveurs cloud, déploiement des
+          ANT TECHNOLOGY s’occupe de toute la chaîne de valeur : configuration de serveurs cloud, déploiement des
           applications, sécurisation, monitoring, et support technique.
         </p>
         <p>
