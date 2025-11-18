@@ -7,7 +7,7 @@ const Layout = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       <header className="bg-white shadow p-4 mb-6">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600"> ANT TECHNOLOGY</h1>
+          <h1 className="text-xl font-bold text-blue-600"> ANT TECHNOLOGIE</h1>
           <nav>
             <ul className="flex space-x-6 text-sm">
               <li>

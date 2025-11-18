@@ -19,7 +19,7 @@ const Home = () => {
 
   {/* Contenu texte */}
   <div className="relative z-10">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4">ANT TECHNOLOGY</h1>
+    <h1 className="text-4xl md:text-5xl font-bold mb-4">ANT TECHNOLOGIE</h1>
     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
       Créateurs de solutions numériques puissantes pour les entreprises.
     </p>

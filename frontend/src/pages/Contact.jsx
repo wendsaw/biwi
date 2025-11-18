@@ -10,7 +10,7 @@ const Contact = () => {
   const WHATSAPP_NUMBER = "22668167516"; 
   const PHONE_1 = "60191998";
   const PHONE_2 = "68167516";
-  const EMAIL_CONTACT = "info@anttechnologybf.com";
+  const EMAIL_CONTACT = "info@anttechnologie.com";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
