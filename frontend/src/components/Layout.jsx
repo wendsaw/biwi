@@ -11,7 +11,7 @@ const Layout = () => {
           {/* 🔥 Logo + texte ANT TECHNOLOGIE */}
           <div className="flex items-center space-x-3">
             <img 
-              src="public/logoAutoColant.png" 
+              src="/logoAutoColant.png" 
               alt="ANT Technology Logo" 
               className="h-10 w-auto"
             />
