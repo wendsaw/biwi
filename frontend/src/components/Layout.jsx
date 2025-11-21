@@ -7,7 +7,18 @@ const Layout = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       <header className="bg-white shadow p-4 mb-6">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600"> ANT TECHNOLOGIE</h1>
+
+          {/* 🔥 Logo + texte ANT TECHNOLOGIE */}
+          <div className="flex items-center space-x-3">
+            <img 
+              src="src/mnt/data/logoAutoColant.png" 
+              alt="ANT Technology Logo" 
+              className="h-10 w-auto"
+            />
+            <h1 className="text-xl font-bold text-blue-600">ANT TECHNOLOGIE</h1>
+          </div>
+
+          {/* Navigation */}
           <nav>
             <ul className="flex space-x-6 text-sm">
               <li>
@@ -21,6 +32,7 @@ const Layout = () => {
               </li>
             </ul>
           </nav>
+
         </div>
       </header>
 
