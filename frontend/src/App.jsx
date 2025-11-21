@@ -13,6 +13,7 @@ import DeveloppementWeb from "./components/DeveloppementWeb";
 import ApplicationsMobiles from "./components/ApplicationsMobiles";
 import VenteMateriels from "./components/VenteMateriels";
 import SolutionsCloud from "./components/SolutionsCloud"; // ✅
+import FormationsTech from "./components/FormationsTech";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="developpement-web" element={<DeveloppementWeb />} />
           <Route path="applications-mobiles" element={<ApplicationsMobiles />} />
           <Route path="vente-materiels" element={<VenteMateriels />} />
+          <Route path="formations" element={<FormationsTech />} />
         </Route>
       </Routes>
     </Router>
