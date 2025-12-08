@@ -39,11 +39,11 @@ const Home = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
 
-          <Link to="/plateformes-informatiques">
+          <Link to="/plateformes-Numerique">
             <ServiceCard
               icon={<FaLaptopCode size={40} />}
-              title="Plateformes Informatiques"
-              description="Conception de plateformes web robustes pour les institutions."
+              title="Plateformes Numerique"
+              description="Conception de plateformes numerique robustes pour les institutions."
             />
           </Link>
 
